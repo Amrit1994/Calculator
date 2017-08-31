@@ -1,0 +1,36 @@
+<html ng-app="calculatorApp">
+    <head>
+ <title> Calculator Application</title> 
+ <script src="angular.min.js"></script>  
+ <script src = "calc.js"></script> 
+   
+    </head>
+<body>
+
+<h1>Calculator</h1>
+
+<div ng-app = "calculatorApp"   ng-controller="Myctrl">
+<!--<iframe width ="400" height="300" ng-src=" ">-->
+<input type="text" ng-model="input1"></input>
+<span ng-bind="selectedOperation"></span>
+<input type="text"ng-model="input2"></input>
+<!--<button ng-click="computeResult()">=</button>
+<span ng-bind="resultValue"></span>-->
+<p>
+    Select Operations:
+   <button ng-click="buttonClicked('+'); computeResult();">+</button> 
+   <button ng-click="buttonClicked('-'); computeResult();">-</button> 
+   <button ng-click="buttonClicked('*'); computeResult();">*</button> 
+    
+</p>
+Result:
+<span ng-bind ="resultValue"></span>
+
+</div>
+
+</body>
+ 
+
+
+
+</html>
